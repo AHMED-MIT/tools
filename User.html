@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> coding dot </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="a_letter_letters_alphabet_icon_208976.ico">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="ahmed1.css">    
+     <meta charset="utf-8">  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!-- Font Awesome CDN Link for Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx:bar-chart-square'></i>
+      
+        <div class="logo_name">
+      <br>
+      coding dot
+
+          <div class="clock">
+            <div class="display">
+      </div>
+      </div>
+      <script>
+            setInterval(function(){
+              const clock = document.querySelector(".display");
+              let time = new Date();
+              let sec = time.getSeconds();
+              let min = time.getMinutes();
+              let hr = time.getHours();
+              let day = 'AM';
+              if(hr > 12){
+                day = 'PM';
+                hr = hr - 12;
+              }
+              if(hr == 0){
+                hr = 12;
+              }
+              if(sec < 10){
+                sec = '0' + sec;
+              }
+              if(min < 10){
+                min = '0' + min;
+              }
+              if(hr < 10){
+                hr = '0' + hr;
+              }
+              clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+            });
+          </script>
+
+
+        </div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-qr' ></i>
+          <span class="links_name">QR code</span>
+        </a>
+         <span class="tooltip">QR code</span>
+      </li>
+      <li>
+       <a href="User.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Translator</span>
+       </a>
+       <span class="tooltip">Translator</span>
+     </li>
+     <li>
+       <a href="Messages.html">
+        <i class='bx bx-note'></i>
+                 <span class="links_name">Notes</span>
+       </a>
+       <span class="tooltip">Notes</span>
+     </li>
+     <li>
+
+     <li>
+       <a href="File Manager.html">
+        <i class='bx bxs-notepad'></i>
+         <span class="links_name">Todo List </span>
+       </a>
+       <span class="tooltip">Todo List</span>
+     </li>
+
+     <li>
+      <a href="AAa.html">
+        <i class='bx bxs-hourglass'></i>
+        <span class="links_name">Prayer </span>
+      </a>
+      <span class="tooltip">Prayer</span>
+    </li>
+    
+     <li>
+     <li>
+     <li>
+       <a href="setting.html">
+        <i class='bx bx-child'></i>
+                 <span class="links_name">Hangman</span>
+       </a>
+       <span class="tooltip">Hangman</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+          
+           <div class="name_job">
+             <div class="name">Ahmed mitwalli </div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-code-block' style='color:#ffffff' id="log_out"></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Translator</div>
+      <center>
+      <div class="container">
+        <div class="wrapper">
+          <div class="text-input">
+            <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+            <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+          </div>
+          <ul class="controls">
+            <li class="row from">
+              <div class="icons">
+                <i id="from" class="fas fa-volume-up"></i>
+                <i id="from" class="fas fa-copy"></i>
+              </div>
+              <select></select>
+            </li>
+            <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+            <li class="row to">
+              <select></select>
+              <div class="icons">
+                <i id="to" class="fas fa-volume-up"></i>
+                <i id="to" class="fas fa-copy"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button>Translate Text</button>
+      </div>
+    
+</center>
+
+
+
+      
+  </section>
+
+  <script src="script.js"></script>
+  <script src="w.js"></script>
+  <script src="x.js"></script>
+
+
+</body>
+</html>

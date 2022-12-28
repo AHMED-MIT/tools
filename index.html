@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+   <html lang="en" dir="ltr">
+    <head>
+    <title> coding dot </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--icon-->
+    <link rel="icon" href="a_letter_letters_alphabet_icon_208976.ico">
+
+    <!--body icon-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="aaaaaaaaaaaaaaaaaaaaaaa.css">
+   </head>
+<body>
+  <!------------nav--------------->
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx:bar-chart-square'></i>
+      
+        <div class="logo_name">
+      <br>
+      coding dot
+
+          <div class="clock">
+            <div class="display">
+      </div>
+      </div>
+      <script>
+            setInterval(function(){
+              const clock = document.querySelector(".display");
+              let time = new Date();
+              let sec = time.getSeconds();
+              let min = time.getMinutes();
+              let hr = time.getHours();
+              let day = 'AM';
+              if(hr > 12){
+                day = 'PM';
+                hr = hr - 12;
+              }
+              if(hr == 0){
+                hr = 12;
+              }
+              if(sec < 10){
+                sec = '0' + sec;
+              }
+              if(min < 10){
+                min = '0' + min;
+              }
+              if(hr < 10){
+                hr = '0' + hr;
+              }
+              clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+            });
+          </script>
+
+
+        </div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-qr' ></i>
+          <span class="links_name">QR code</span>
+        </a>
+         <span class="tooltip">QR code</span>
+      </li>
+      <li>
+       <a href="User.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Translator</span>
+       </a>
+       <span class="tooltip">Translator</span>
+     </li>
+     <li>
+       <a href="Messages.html">
+        <i class='bx bx-note'></i>
+                 <span class="links_name">Notes</span>
+       </a>
+       <span class="tooltip">Notes</span>
+     </li>
+     <li>
+
+     <li>
+       <a href="File Manager.html">
+        <i class='bx bxs-notepad'></i>
+         <span class="links_name">Todo List </span>
+       </a>
+       <span class="tooltip">Todo List</span>
+     </li>
+
+     <li>
+      <a href="AAa.html">
+        <i class='bx bxs-hourglass'></i>
+        <span class="links_name">Prayer </span>
+      </a>
+      <span class="tooltip">Prayer</span>
+    </li>
+    
+     <li>
+     <li>
+     <li>
+       <a href="setting.html">
+        <i class='bx bx-child'></i>
+                 <span class="links_name">Hangman</span>
+       </a>
+       <span class="tooltip">Hangman</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+          
+           <div class="name_job">
+             <div class="name">Ahmed mitwalli </div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-code-block' style='color:#ffffff' id="log_out"></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">QR code</div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+
+      <div class="wrapper">
+        <header>
+          <h1>QR Code Generator</h1>
+          <p>Paste a url or enter text to create QR code</p>
+        </header>
+        <div class="form">
+          <input type="text" spellcheck="false" placeholder="Enter text or url">
+          <button>Generate QR Code</button>
+        </div>
+        <div class="qr-code">
+          <img src="" alt="qr-code">
+        </div>
+      </div>
+    </center>
+    
+
+
+
+
+      
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

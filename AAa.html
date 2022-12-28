@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> coding dot </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="a_letter_letters_alphabet_icon_208976.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="s.css">
+
+    <!-- Boxicons CDN Link -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx:bar-chart-square'></i>
+      
+        <div class="logo_name">
+      <br>
+      coding dot
+
+          <div class="clock">
+            <div class="display">
+      </div>
+      </div>
+      <script>
+            setInterval(function(){
+              const clock = document.querySelector(".display");
+              let time = new Date();
+              let sec = time.getSeconds();
+              let min = time.getMinutes();
+              let hr = time.getHours();
+              let day = 'AM';
+              if(hr > 12){
+                day = 'PM';
+                hr = hr - 12;
+              }
+              if(hr == 0){
+                hr = 12;
+              }
+              if(sec < 10){
+                sec = '0' + sec;
+              }
+              if(min < 10){
+                min = '0' + min;
+              }
+              if(hr < 10){
+                hr = '0' + hr;
+              }
+              clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+            });
+          </script>
+
+
+        </div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-qr' ></i>
+          <span class="links_name">QR code</span>
+        </a>
+         <span class="tooltip">QR code</span>
+      </li>
+      <li>
+       <a href="User.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Translator</span>
+       </a>
+       <span class="tooltip">Translator</span>
+     </li>
+     <li>
+       <a href="Messages.html">
+        <i class='bx bx-note'></i>
+                 <span class="links_name">Notes</span>
+       </a>
+       <span class="tooltip">Notes</span>
+     </li>
+     <li>
+
+     <li>
+       <a href="File Manager.html">
+        <i class='bx bxs-notepad'></i>
+         <span class="links_name">Todo List </span>
+       </a>
+       <span class="tooltip">Todo List</span>
+     </li>
+
+     <li>
+      <a href="AAa.html">
+        <i class='bx bxs-hourglass'></i>
+        <span class="links_name">Prayer </span>
+      </a>
+      <span class="tooltip">Prayer</span>
+    </li>
+    
+     <li>
+     <li>
+     <li>
+       <a href="setting.html">
+        <i class='bx bx-child'></i>
+                 <span class="links_name">Hangman</span>
+       </a>
+       <span class="tooltip">Hangman</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+          
+           <div class="name_job">
+             <div class="name">Ahmed mitwalli </div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-code-block' style='color:#ffffff' id="log_out"></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Prayer</div>
+      
+      <center><iframe id="iframe2" style=" border: 0px solid rgb(238, 238, 238); width: 100%; overflow: hidden; height: 445px;" src="https://timesprayer.today/widget_frame.php?frame=2&amp;id=2541&amp;sound=true"></iframe></center>
+
+  </section>
+
+  <script src="script.js"></script>
+  <script src="G.js"></script>
+
+
+</body>
+</html>
